@@ -3,17 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lịch Chiếu</title>
     <link rel="stylesheet" href="../assets/css/reset.css" />
     <link rel="stylesheet" href="../assets/css/header.css" />
     <link rel="stylesheet" href="../assets/css/footer.css" />
-    <link rel="stylesheet" href="../assets/css/login.css" />
+    <link rel="stylesheet" href="../assets/css/lichchieu.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     />
-    <title>Login</title>
   </head>
+
   <body>
+    <!-- banner -->
     <header class="header">
       <div class="top-header">
         <a href="../index.html" target="_self">
@@ -49,61 +51,115 @@
         </nav>
       </div>
     </header>
-    <!-- MAIN -->
-    <main class="main">
-      <div class="auth-container">
-        <div class="form-box login-form">
-          <h1>LOGIN</h1>
+    <main class="main-sche">
+      <section class="schedule-banner">
+        <div class="overlay"></div>
 
-          <form action="">
-            <input type="text" placeholder="Username" />
-            <input type="password" placeholder="Password" />
-            <button type="submit">Login</button>
-          </form>
+        <div class="banner-content">
+          <h1>LỊCH CHIẾU PHIM</h1>
+          <p>Đặt vé nhanh chóng và dễ dàng</p>
+        </div>
+      </section>
 
-          <div class="auth-options">
-            <label>
-              <input type="checkbox" name="RememberMe" id="rememberMe" />
-              Remember Me
-            </label>
+      <!-- schedule -->
+
+      <section class="schedule-container">
+        <!-- cinema -->
+
+        <div class="cinema-list">
+          <button class="cinema-btn active">Hà Nội</button>
+          <button class="cinema-btn">Đà Nẵng</button>
+          <button class="cinema-btn">Thành phố Hồ Chí Minh</button>
+        </div>
+
+        <!-- date -->
+
+        <div class="date-list">
+          <button class="date-btn active">
+            <span>Thứ 2</span>
+            <h3>23/05</h3>
+          </button>
+
+          <button class="date-btn">
+            <span>Thứ 3</span>
+            <h3>24/05</h3>
+          </button>
+
+          <button class="date-btn">
+            <span>Thứ 4</span>
+            <h3>25/05</h3>
+          </button>
+
+          <button class="date-btn">
+            <span>Thứ 5</span>
+            <h3>26/05</h3>
+          </button>
+        </div>
+
+        <!-- movie card -->
+
+        <div class="movie-card">
+          <div class="movie-poster">
+            <img src="../assets/images/movie1.jpg" alt="" />
           </div>
 
-          <div class="socials">
-            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-            <a href="#"><i class="fa-brands fa-google"></i></a>
-            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+          <div class="movie-info">
+            <div class="movie-top">
+              <h2>Avengers: Endgame</h2>
+
+              <div class="movie-tag">
+                <span>Hành động</span>
+                <span>180 phút</span>
+                <span>T18</span>
+              </div>
+            </div>
+
+            <p class="movie-desc">
+              Biệt đội Avengers tập hợp lần cuối để chống lại Thanos và cứu lấy
+              vũ trụ.
+            </p>
+
+            <div class="time-list">
+              <button class="time-btn">13:00</button>
+              <button class="time-btn">15:30</button>
+              <button class="time-btn">18:00</button>
+              <button class="time-btn">20:30</button>
+            </div>
           </div>
         </div>
-        <div class="form-box signup-form">
-          <h1>REGISTER</h1>
 
-          <form action="">
-            <input type="text" placeholder="Full name" />
-            <input type="text" placeholder="Username" />
-            <input type="email" placeholder="Email" />
-            <input type="password" placeholder="Password" />
-            <button type="submit">Create Account</button>
-          </form>
-        </div>
-        <div class="overlay-box">
-          <div class="overlay-content overlay-register">
-            <div class="user-icon"><i class="fa-regular fa-user"></i></div>
-            <h2>Welcome</h2>
-            <p>Enter your personal details and start journey with us.</p>
-            <button class="switch-btn" id="showRegister">REGISTER ←</button>
+        <!-- movie card -->
+
+        <div class="movie-card">
+          <div class="movie-poster">
+            <img src="../assets/images/movie2.jpg" alt="" />
           </div>
 
-          <div class="overlay-content overlay-login">
-            <div class="user-icon"><i class="fa-regular fa-user"></i></div>
-            <h2>Hello Again!</h2>
-            <p>Already have an account?</p>
-            <button class="switch-btn" id="showLogin">LOGIN →</button>
+          <div class="movie-info">
+            <div class="movie-top">
+              <h2>Spider-Man: No Way Home</h2>
+
+              <div class="movie-tag">
+                <span>Hành động</span>
+                <span>150 phút</span>
+                <span>T13</span>
+              </div>
+            </div>
+
+            <p class="movie-desc">
+              Peter Parker đối mặt với đa vũ trụ và những kẻ thù nguy hiểm nhất.
+            </p>
+
+            <div class="time-list">
+              <button class="time-btn">10:00</button>
+              <button class="time-btn">14:00</button>
+              <button class="time-btn">17:30</button>
+              <button class="time-btn">21:00</button>
+            </div>
           </div>
         </div>
-      </div>
+      </section>
     </main>
-    <!-- FOOTER -->
     <footer class="footer">
       <div class="footer-container">
         <img src="../assets/images/imgindex/logo.png" alt="logo" />
@@ -146,6 +202,5 @@
         </menu>
       </div>
     </footer>
-    <script src="../assets/js/login.js"></script>
   </body>
 </html>
